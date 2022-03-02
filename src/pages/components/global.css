@@ -4,7 +4,7 @@
   padding: 0px;
   margin: 0px;
 }
-*{
+* {
   padding: 0px;
   margin: 0px;
 }
@@ -25,7 +25,6 @@
   top: 60%;
   left: 45%;
   background-color: black;
-  
 }
 .button {
   /* width: 280px;
@@ -50,7 +49,7 @@
 }
 .button-class {
   padding-left: 10px;
-  padding-right: 30px;
+  padding-right: 25px;
   padding-top: 2px;
   padding-bottom: 2px;
   border-radius: 50px;
@@ -59,7 +58,9 @@
   font-weight: bolder;
   margin-top: 2vh;
   width: fit-content;
-
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
   margin-left: 5vw;
   border: 0.1rem solid;
   background-color: transparent;
@@ -95,7 +96,7 @@
   width: 50vw;
   top: 8vh;
 }
-.header-mobile{
+.header-mobile {
   background-color: rgba(0, 0, 0, 0.87);
   color: white;
 }
@@ -119,7 +120,7 @@
 .footer-logo {
   flex-direction: row;
   display: flex;
-  
+
   align-items: center;
   width: 50vw;
   padding-left: 40px;
@@ -146,10 +147,10 @@
 .span {
   color: white;
 }
-a{
+a {
   color: white;
 }
-a:hover{
+a:hover {
   text-decoration: none;
 }
 @font-face {
@@ -169,16 +170,14 @@ a:hover{
 }
 
 .download-page {
-
   text-align: center;
 
   height: 60%;
   padding-top: 20vh;
 }
-.download-title{
+.download-title {
   color: white;
   font-family: "NuevaStd-Bold";
   font-size: 5.5vw;
   padding-bottom: 20px;
-  
 }

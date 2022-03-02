@@ -123,7 +123,7 @@ export const Home = () => {
               from friends for ...
             </h1>
           </div>
-          <div style={{width:size.width,backgroundColor:"red"}}>
+          <div style={{width:size.width}}>
           {size.width > 480 ? (
             <Marquee gradientColor={""} speed={80} play={true}>
               {images.map((item) => {
@@ -146,9 +146,10 @@ export const Home = () => {
             <div
               className="vertical-list"
               style={{
-                height: 250,
+                height: 280,
                 overflow: "scroll",
                 overflowX: "hidden",
+                width:"100%"
               }}
             >
               {images.map((item, key) => {

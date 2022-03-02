@@ -1,0 +1,25 @@
+
+.privacy {
+  height: 40vh;
+  overflow-y: scroll;
+  color: white;
+  font-size: 26px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.main-text {
+  text-align: start;
+  margin-top: 5vh;
+
+  margin-bottom: 2.5vh;
+  color: white;
+}
+.main-privacy {
+  padding-left: 3vw;
+  padding-right: 5vw;
+  padding-top: 36px;
+}
+.main-privacy > h1 {
+  padding-left: 12px;
+  font-family: "NuevaStd-Bold";
+  font-size: 50px;
+}

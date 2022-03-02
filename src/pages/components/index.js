@@ -51,7 +51,7 @@ export const StaticHome = ({ component }) => {
 
       <div className="footer">
         {size.width > 480 ? (
-          <div className="footer">
+          <div className="footer" style={{paddingBottom:20}}>
             <div className="footer-logo">
               <h2>Connect with us</h2>
 

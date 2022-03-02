@@ -7,8 +7,16 @@ const Privacy = () => {
   return (
     <StaticHome
       component={
-        <div className="main-privacy">
-          <h1 style={{ fontSize: size.width > 480 ? 50 : 35 }} className="main-text">Privacy Polices</h1>
+        <div
+          className="main-privacy"
+          style={{ paddingTop: size.width > 480 ? 30 : 0 }}
+        >
+          <h1
+            style={{ fontSize: size.width > 480 ? 50 : 35 }}
+            className="main-text"
+          >
+            Privacy Polices
+          </h1>
           <Col
             className="privacy"
             style={{ fontSize: size.width > 480 ? 26 : 18 }}

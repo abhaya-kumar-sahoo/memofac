@@ -29,7 +29,6 @@ const NavigationBar = () => {
 
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto">
-            
               <Nav.Link className="h3 px-4 " href="/">
                 Home
               </Nav.Link>
@@ -53,11 +52,22 @@ const NavigationBar = () => {
                 id="memo-logo"
                 src={MemoLogo}
                 alt="Memofac Logo"
-                height="48"
-                className="logo"
+                height="50"
+                // className="logo"
+                style={{
+                  position: "relative",
+                  left: -10,
+                }}
               />
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="offcanvasNavbar" />
+            <Navbar.Toggle
+              aria-controls="offcanvasNavbar"
+              style={{
+                position: "absolute",
+                right: 15,
+              }}
+            />
+
             <Navbar.Offcanvas
               id="offcanvasNavbar"
               aria-labelledby="offcanvasNavbarLabel"

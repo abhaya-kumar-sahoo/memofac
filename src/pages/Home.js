@@ -123,6 +123,7 @@ export const Home = () => {
               from friends for ...
             </h1>
           </div>
+          <div style={{width:size.width,backgroundColor:"red"}}>
           {size.width > 480 ? (
             <Marquee gradientColor={""} speed={80} play={true}>
               {images.map((item) => {
@@ -167,6 +168,7 @@ export const Home = () => {
               })}
             </div>
           )}
+        </div>
         </div>
       }
     />

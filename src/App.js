@@ -29,4 +29,3 @@ function App() {
 }
 
 export default App;
-// "homepage": "https://abhaya-kumar-sahoo.github.io/memofac",

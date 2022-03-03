@@ -98,12 +98,9 @@ function useWindowSize() {
 }
 
 export const Home = () => {
-  const [state, setState] = React.useState(1);
-  const [play, setPlay] = React.useState(false);
+ 
   const size = useWindowSize();
-  React.useEffect(() => {
-    setPlay(!play);
-  }, [state]);
+
   return (
     <StaticHome
       component={
@@ -135,6 +132,7 @@ export const Home = () => {
                         height={40}
                         style={{ paddingBottom: 5 }}
                         src={item.url}
+                        alt="icon"
                       />
                     )}{" "}
                     {item.name}
@@ -161,6 +159,8 @@ export const Home = () => {
                         height={30}
                         style={{ paddingBottom: 5 }}
                         src={item.url}
+                        alt="icon"
+
                       />
                     )}{" "}
                     {item.name}

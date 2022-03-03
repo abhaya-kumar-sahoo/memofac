@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col} from "react-bootstrap";
 import { StaticHome, useWindowSize } from "../components";
 import "./Privacy.css";
 const Privacy = () => {

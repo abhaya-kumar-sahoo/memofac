@@ -15,13 +15,13 @@ export const Download = () => {
           >
             Download the app from
           </h1>
-          <img
+          <img alt="appstore"
             src={AppStorelogo}
             className={size.width > 480 ? "mx-3" : "mx-1"}
             width={size.width > 480 ? 330 : 150}
           />
           <a href="https://play.google.com/store/apps/details?id=com.memofac">
-          <img
+          <img alt="playstore"
             src={PlayStoreLogo}
             className="mx-2"
             width={size.width > 480 ? 310 : 140}

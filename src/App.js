@@ -5,6 +5,7 @@ import { About } from "./pages/About/About";
 import { Download } from "./pages/Download/Download";
 import { useWindowSize } from "./pages/components";
 import NavigationBar from "./pages/components/Navbar";
+
 function App() {
   const size = useWindowSize();
   return (

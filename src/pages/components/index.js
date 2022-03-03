@@ -5,7 +5,7 @@ import FbLogo from "../../assets/logos/Fb Icon.png";
 import PlayStoreLogo from "../../assets/logos/Playstore icon.png";
 import AppStorelogo from "../../assets/logos/Appstore icon.png";
 import "./global.css";
-import NavigationBar from "./Navbar";
+
 
 // Usage
 
@@ -40,18 +40,12 @@ export const StaticHome = ({ component }) => {
   const size = useWindowSize();
 
   return (
-    <div
-      // style={{
-      //   height: size.height,
-      //   width: size.width,
-      // }}
-    >
-{/* <NavigationBar /> */}
+    <div>
       {component}
 
       <div className="footer">
         {size.width > 480 ? (
-          <div className="footer" style={{paddingBottom:20}}>
+          <div className="footer" style={{ paddingBottom: 20 }}>
             <div className="footer-logo">
               <h2>Connect with us</h2>
 

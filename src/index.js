@@ -13,6 +13,7 @@ ReactDOM.render(
       height: window.innerHeight,
       backgroundImage: `url(${BG})`,
       backgroundSize: "cover",
+      backgroundColor:"#161616"
     }}
   >
     <Suspense fallback={<Loader marginBottom="0%" marginTop="50%" />}>

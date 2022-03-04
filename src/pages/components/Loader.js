@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../../assets/photos/MemofacLogo_1.jpeg";
 import Loaders from "react-js-loader";
 import { useWindowSize } from ".";
 

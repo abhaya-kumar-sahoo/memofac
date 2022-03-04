@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from "react";
 import BG from "./assets/photos/Hotels.png";
 import ReactDOM from "react-dom";
 import Loader from "./pages/components/Loader";
-import { useWindowSize } from "./pages/components";
+
 
 const App = lazy(() => import("./App"));
 

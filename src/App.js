@@ -18,12 +18,12 @@ function App() {
   return (
     <div
       
-      style={{
-        height: size.height,
-        width: size.width,
-        backgroundImage:`url(${BG})`,
-        backgroundSize:"cover",
-      }}
+      // style={{
+      //   height: size.height,
+      //   width: size.width,
+      //   backgroundImage:`url(${BG})`,
+      //   backgroundSize:"cover",
+      // }}
     >
       <Router>
         <NavigationBar />

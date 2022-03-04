@@ -43,9 +43,38 @@
       href="../src/assets/photos/MemofacLogo_1.jpeg" 
       type="image/x-icon"
     />
+    <style>
+      .svgLoader {
+        animation: spin 0.5s linear infinite;
+        margin: auto;
+      }
+      .divLoader {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
   </head>
+  
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="divLoader">
+        <svg class="svgLoader" viewBox="0 0 1024 1024" width="10em" height="10em">
+          <path fill="lightblue"
+            d="PATH FOR THE LOADER ICON"
+          />
+        </svg>
+      </div>
+    </div>
+
+
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

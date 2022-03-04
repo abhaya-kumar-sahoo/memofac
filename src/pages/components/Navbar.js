@@ -3,7 +3,7 @@ import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
 import { useWindowSize } from "./index";
 import MemoLogo from "../../assets/logos/Full name Logo.png";
 
-export const NavigationBar = () => {
+export default function NavigationBar(){
   const size = useWindowSize();
   return (
     <div>

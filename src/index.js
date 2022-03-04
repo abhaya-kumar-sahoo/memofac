@@ -16,7 +16,7 @@ ReactDOM.render(
       backgroundColor:"#161616"
     }}
   >
-    <Suspense fallback={<Loader marginBottom="0%" marginTop="50%" />}>
+    <Suspense fallback={<Loader />}>
       <App />
     </Suspense>
   </div>,

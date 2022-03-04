@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useWindowSize } from "./pages/components";
-import { NavigationBar } from "./pages/components/Navbar";
+// import { NavigationBar } from "./pages/components/Navbar";
 import BG from "./assets/photos/Hotels.png";
 import Loader from "./pages/components/Loader";
 const Home = lazy(() => import("./pages/Home"));
@@ -11,7 +11,7 @@ const About = lazy(() => import("./pages/About/About"));
 const Download = lazy(() => import("./pages/Download/Download"));
 //const useWindowSize =lazy(()=> import ("./pages/components"))
 
-// const NavigationBar= lazy(()=> import  ("./pages/components/Navbar"))
+const NavigationBar= lazy(()=> import  ("./pages/components/Navbar"))
 
 function App() {
   const size = useWindowSize();
@@ -26,8 +26,9 @@ function App() {
       // }}
     >
       <Router>
+        
+        <Suspense fallback={<Loader marginTop={"20%"} />}>
         <NavigationBar />
-        <Suspense fallback={<Loader />}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/privacy" element={<Privacy />} />

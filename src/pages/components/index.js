@@ -40,7 +40,7 @@ export const StaticHome = ({ component }) => {
   const size = useWindowSize();
 
   return (
-    <div>
+    <div >
       {component}
 
       <div className="footer">

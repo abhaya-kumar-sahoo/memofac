@@ -97,7 +97,7 @@ function useWindowSize() {
   return windowSize;
 }
 
-export const Home = () => {
+export default function Home(){
  
   const size = useWindowSize();
 

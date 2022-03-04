@@ -2,7 +2,7 @@ import React from "react";
 import { Col} from "react-bootstrap";
 import { StaticHome, useWindowSize } from "../components";
 import "./Privacy.css";
-const Privacy = () => {
+export default function Privacy() {
   const size = useWindowSize();
   return (
     <StaticHome
@@ -126,4 +126,4 @@ const Privacy = () => {
   );
 };
 
-export default Privacy;
+

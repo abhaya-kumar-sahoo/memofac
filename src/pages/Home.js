@@ -123,9 +123,9 @@ export default function Home(){
           <div style={{width:size.width}}>
           {size.width > 480 ? (
             <Marquee gradientColor={""} speed={80} play={true}>
-              {images.map((item) => {
+              {images.map((item,key) => {
                 return (
-                  <div className="button">
+                  <div className="button" key={key}>
                     {item.url === "" ? null : (
                       <img
                         width={40}
@@ -152,7 +152,7 @@ export default function Home(){
             >
               {images.map((item, key) => {
                 return (
-                  <div className="button-class">
+                  <div className="button-class" key={key}>
                     {item.url === "" ? null : (
                       <img
                         width={25}

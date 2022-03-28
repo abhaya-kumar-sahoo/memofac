@@ -133,16 +133,17 @@
   display: flex;
   padding-left: 25px;
   height: 130px;
- 
   max-height: fit-content;
- 
 }
 .footer-list >div>h5{
   font-size: large;
+  padding-bottom: 10px;
 }
 .footer-list >div>a>p{
   font-size: 12px;
+  margin-bottom: 10px;
 }
+
 .footer-logo {
   flex-direction: row;
   display: flex;

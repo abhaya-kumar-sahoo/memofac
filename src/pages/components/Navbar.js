@@ -3,7 +3,7 @@ import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
 import { useWindowSize } from "./index";
 import MemoLogo from "../../assets/logos/Full name Logo.png";
 
-export default function NavigationBar(){
+export default function NavigationBar() {
   const size = useWindowSize();
   return (
     <div>
@@ -25,7 +25,11 @@ export default function NavigationBar(){
               className="logo"
             />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            style={{ border: 0, color: "transparent", backgroundColor: "red" }}
+          />
 
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto">
@@ -65,6 +69,8 @@ export default function NavigationBar(){
               style={{
                 position: "absolute",
                 right: 15,
+                color:"transparent",
+                border:0
               }}
             />
 
@@ -107,5 +113,4 @@ export default function NavigationBar(){
       )}
     </div>
   );
-};
-
+}

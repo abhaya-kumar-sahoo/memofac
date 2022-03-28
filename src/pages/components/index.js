@@ -91,8 +91,11 @@ export const StaticHome = ({ component }) => {
               <a href="https://play.google.com/store/apps/details?id=com.memofac">
                 <p>Android</p>
               </a>
-
-              <p>Iphone</p>
+              <h5>Download</h5>
+              <a href="https://play.google.com/store/apps/details?id=com.memofac">
+                <p>Iphone</p>
+              </a>
+              
             </div>
           </div>
         )}

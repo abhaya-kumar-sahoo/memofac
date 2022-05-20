@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import InstaLogo from "../../assets/logos/Insta Icon.png";
-import GmailLogo from "../../assets/logos/Gmail icon.png";
 import FbLogo from "../../assets/logos/Fb Icon.png";
-import PlayStoreLogo from "../../assets/logos/Playstore icon.png";
-import AppStorelogo from "../../assets/logos/Appstore icon.png";
+
 import "./global.css";
 
 // Usage

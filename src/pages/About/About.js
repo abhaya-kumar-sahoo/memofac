@@ -1,9 +1,9 @@
 import React from "react";
 import { Col } from "react-bootstrap";
-import { StaticHome, useWindowSize } from "../components";
+import { StaticHome } from "../components";
 import "../Privacy Policy/Privacy.css";
 export default function About() {
-  const size = useWindowSize();
+
   return (
     <StaticHome
       component={

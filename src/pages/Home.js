@@ -4,20 +4,14 @@ import Marquee from "react-fast-marquee";
 
 import { StaticHome } from "./components/index";
 import { images, images_2 } from "./components/Images";
-import { Button, Modal } from "react-bootstrap";
+
 import PlayStoreLogo from "../assets/logos/Playstore icon.png";
-// import Gallery from 'react-photo-gallery';
-import Gallery from "react-grid-gallery";
-import { ReactPictureGrid } from "react-picture-grid";
 
 // Usage
 import {
   MDBContainer,
-  MDBBtn,
   MDBModal,
   MDBModalBody,
-  MDBModalHeader,
-  MDBModalFooter,
 } from "mdbreact";
 import { MobileViewImages } from "./components/MobileImages";
 // Hook

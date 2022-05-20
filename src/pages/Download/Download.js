@@ -1,7 +1,6 @@
 import React from "react";
 import { StaticHome, useWindowSize } from "../components";
 import PlayStoreLogo from "../../assets/logos/Playstore icon.png";
-import AppStorelogo from "../../assets/logos/Appstore icon.png";
 
 export default function Download() {
   const size = useWindowSize();

@@ -2,76 +2,26 @@ import React, { useEffect, useState } from "react";
 import "./Home.css";
 import Marquee from "react-fast-marquee";
 
-import Fashion from "../assets/logos/Fashion (W).png";
-
-import Finance from "../assets/logos/Finance (W).png";
-
-import Hospital from "../assets/logos/Health (W).png";
-import Hotels from "../assets/logos/Hotel (B).png";
-import Movies from "../assets/logos/Movies (B).png";
-import NGOs from "../assets/logos/NGOs (W).png";
-import Restaurant from "../assets/logos/Restaurant (W).png";
-import YouTube from "../assets/logos/Youtube Channels (W).png";
-import Zoo from "../assets/logos/Zoo (W).png";
-import Beach from "../assets/logos/Beach (W).png";
-
 import { StaticHome } from "./components/index";
-const images = [
-  {
-    url: Hotels,
-    name: "Hotels",
-  },
-
-  {
-    url: Restaurant,
-    name: "Restaurant",
-  },
-  {
-    url: Beach,
-    name: "Beach",
-  },
-  {
-    url: Movies,
-    name: "Movies",
-  },
-
-  {
-    url: Fashion,
-    name: "Fashion",
-  },
-
-  {
-    url: Finance,
-    name: "Finance",
-  },
-
-  {
-    url: Hospital,
-    name: "Hospital",
-  },
-  {
-    url: NGOs,
-    name: "NGOs",
-  },
-
-  {
-    url: Zoo,
-    name: "Zoo",
-  },
-  {
-    url: YouTube,
-    name: "Youtube Channels",
-  },
-  {
-    url: "",
-    name: "Etc",
-  },
-];
+import { images, images_2 } from "./components/Images";
+import { Button, Modal } from "react-bootstrap";
+import PlayStoreLogo from "../assets/logos/Playstore icon.png";
+// import Gallery from 'react-photo-gallery';
+import Gallery from "react-grid-gallery";
+import { ReactPictureGrid } from "react-picture-grid";
 
 // Usage
-
+import {
+  MDBContainer,
+  MDBBtn,
+  MDBModal,
+  MDBModalBody,
+  MDBModalHeader,
+  MDBModalFooter,
+} from "mdbreact";
+import { MobileViewImages } from "./components/MobileImages";
 // Hook
-function useWindowSize() {
+export function useWindowSize() {
   // Initialize state with undefined width/height so server and client renders match
   // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
   const [windowSize, setWindowSize] = useState({
@@ -97,81 +47,153 @@ function useWindowSize() {
   return windowSize;
 }
 
-export default function Home(){
- 
+function Modals({ show, onClose = () => {} }) {
   const size = useWindowSize();
 
+  return (
+    <>
+      <MDBContainer>
+        <MDBModal className="modal-lg" isOpen={show} centered>
+          <MDBModalBody className="modal-body">
+            <button className="modal-headers">
+              <h1 onClick={onClose} className="modal-headers">
+                x
+              </h1>
+            </button>
+
+            <h1 className="header-description"> Download the app from</h1>
+            <a href="https://play.google.com/store/apps/details?id=com.memofac">
+              <img
+                alt="playstore"
+                src={PlayStoreLogo}
+                className="mx-2"
+                width={size.width > 480 ? 310 : 140}
+              />
+            </a>
+            <h2 className="header-description" style={{ fontSize: 72 }}>
+              to check reviews{" "}
+            </h2>
+          </MDBModalBody>
+        </MDBModal>
+      </MDBContainer>
+    </>
+  );
+}
+
+export default function Home() {
+  const size = useWindowSize();
+  const [show, setShow] = useState(false);
   return (
     <StaticHome
       component={
         <div className="list">
-          <div>
-            <h1
-              style={{ fontSize: size.width > 480 ? 45 : 20, paddingTop: 30 }}
-              className="header-description"
-            >
-              Find{" "}
-              <span
-                className="span"
-                style={{ fontSize: size.width > 480 ? 75 : 35 }}
-              >
-                reviews
-              </span>{" "}
-              from friends for ...
-            </h1>
-          </div>
-          <div style={{width:size.width}}>
-          {size.width > 480 ? (
-            <Marquee gradientColor={""} speed={80} play={true}>
-              {images.map((item,key) => {
-                return (
-                  <div className="button" key={key}>
-                    {item.url === "" ? null : (
-                      <img
-                        width={40}
-                        height={40}
-                        style={{ paddingBottom: 5 }}
-                        src={item.url}
-                        alt="icon"
-                      />
-                    )}{" "}
-                    {item.name}
+          <Modals show={show} onClose={() => setShow(!show)} />
+          <div style={{ width: size.width }}>
+            {size.width > 480 ? (
+              <>
+                <Marquee gradientColor={""} speed={80} pauseOnHover play={true}>
+                  <div class="scrolling-wrapper">
+                    {images.map((item, key) => {
+                      return (
+                        <div
+                          className="card"
+                          key={key}
+                          onClick={() => setShow(!show)}
+                        >
+                          {item.url === "" ? null : (
+                            <img
+                              width={220}
+                              height={220}
+                              style={{ borderRadius: 10 }}
+                              src={item.url}
+                              alt="icon"
+                            />
+                          )}
+                        </div>
+                      );
+                    })}
                   </div>
-                );
-              })}
-            </Marquee>
-          ) : (
-            <div
-              className="vertical-list"
-              style={{
-                height: 280,
-                overflow: "scroll",
-                overflowX: "hidden",
-                width:"100%"
-              }}
-            >
-              {images.map((item, key) => {
-                return (
-                  <div className="button-class" key={key}>
-                    {item.url === "" ? null : (
-                      <img
-                        width={25}
-                        height={30}
-                        style={{ paddingBottom: 5 }}
-                        src={item.url}
-                        alt="icon"
+                </Marquee>
 
-                      />
-                    )}{" "}
-                    {item.name}
+                <Marquee gradientColor={""} speed={80} pauseOnHover play={true}>
+                  <div class="scrolling-wrapper" style={{ marginTop: 20 }}>
+                    {images_2.map((item, key) => {
+                      return (
+                        <div
+                          className="card"
+                          key={key}
+                          onClick={() => setShow(!show)}
+                        >
+                          {item.url === "" ? null : (
+                            <img
+                              width={220}
+                              height={220}
+                              style={{ borderRadius: 10 }}
+                              src={item.url}
+                              alt="icon"
+                            />
+                          )}
+                        </div>
+                      );
+                    })}
                   </div>
-                );
-              })}
-            </div>
-          )}
-        </div>
+                </Marquee>
+              </>
+            ) : (
+              <div
+                className="vertical-list"
+                style={{
+                  height: size.height*0.8,
+                  overflow: "scroll",
+                  overflowX: "hidden",
+                  display:"flex",
+                  justifyContent:"space-around",
+                  paddingLeft:15,
+                  paddingRight:15
+                }}
+              >
+                <div>
+              
+                  {images.map((item, key) => {
+                    return (
+                      <div className="MobileImage" key={key}>
+                        {item.url === "" ? null : (
+                          <img
+                            width={150}
+                            height={150}
+                            style={{ paddingBottom: 5,borderRadius:10 }}
+                            src={item.url}
+                            alt="icon"
+                          />
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+                <div>
+               
+
+                  {images_2.map((item, key) => {
+                    return (
+                      <div className="MobileImage" key={key}>
+                        {item.url === "" ? null : (
+                          <img
+                            width={150}
+                            height={150}
+                            style={{ paddingBottom: 5,borderRadius:10 }}
+                            src={item.url}
+                            alt="icon"
+                          />
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       }
     />
   );
-};
+}

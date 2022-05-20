@@ -1,21 +1,24 @@
 
 .privacy {
-  height: 40vh;
   overflow-y: scroll;
   color: white;
   font-size: 26px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans";
+  height: 70vh;
 }
 .main-text {
-  text-align: start;
+ 
   margin-top: 5vh;
 
   margin-bottom: 2.5vh;
   color: white;
+  padding-left: 0%;
 }
 .main-privacy {
   padding-left: 3vw;
-  padding-right: 5vw
+  padding-right: 5vw;
+  padding-top: 30px;
+  
 }
 .main-privacy > h1 {
   padding-left: 12px;
@@ -23,7 +26,47 @@
   font-size: 50px;
 }
 .privacy >h2{
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 60px;
+  font-family: 'Gill Sans MT';
+  font-weight: bold;
 
+}
+.privacy >p{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #C6C4C4;
+  font-family: 'Gill Sans MT';
+
+}
+
+@media (max-width: 600px) {
+  .main-text {
+    font-size: 28px;
+  }
+  .privacy >p {
+    font-size: 18px;
+  }
+  .main-privacy{
+    padding-top: 0px;
+
+  }
+  .privacy >h2{
+    margin-top: 60px;
+    font-size: 18px;
+  }
+  .privacy{
+    height: 76vh;
+
+  }
+}
+
+@media (max-width: 600px){
+  .footer-logo{
+    padding-left: 30px;
+    
+  }
+  .main-privacy{
+    height: fit-content;
+  }
 }

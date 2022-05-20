@@ -6,7 +6,6 @@ import PlayStoreLogo from "../../assets/logos/Playstore icon.png";
 import AppStorelogo from "../../assets/logos/Appstore icon.png";
 import "./global.css";
 
-
 // Usage
 
 // Hook
@@ -40,66 +39,32 @@ export const StaticHome = ({ component }) => {
   const size = useWindowSize();
 
   return (
-    <div >
+    <div>
       {component}
 
-      <div className="footer">
-        {size.width > 480 ? (
-          <div className="footer" style={{ paddingBottom: 20 }}>
+      <div className="footer">    
             <div className="footer-logo">
-              <h2>Connect with us</h2>
+              <h2 style={{ paddingTop: 5 }}>Connect with us</h2>
 
-              <h2 className="mx-3">:</h2>
+              <h2 style={{ paddingTop: 5 }} className="mx-3">
+                :
+              </h2>
 
-              <a className="mx-3" href="https://www.instagram.com/memofac_app/">
-                <img alt="" width={26} height={26} src={InstaLogo} />
-              </a>
               <a
-                className="mx-3"
+                className="mx-1"
                 href="https://www.facebook.com/Memofac-103374358665455"
               >
-                <img alt="" width={17} height={50} src={FbLogo} />
+                <img alt="" width={10} height={35} src={FbLogo} />
               </a>
-              <a className="mx-3" href="mailto:memofacapp@gmail.com">
-                <img alt="" width={28} height={25} src={GmailLogo} />
+              <a className="mx-3" href="https://www.instagram.com/memofac_app/">
+                <img alt="" width={20} height={20} src={InstaLogo} />
               </a>
-            </div>
-
-            <div className="downloads" sm={4}>
-              <img alt="" className="mx-2" width={120} src={AppStorelogo} />
-              <a href="https://play.google.com/store/apps/details?id=com.memofac">
-                <img alt="" width={110} src={PlayStoreLogo} />
-              </a>
-            </div>
+          
           </div>
-        ) : (
-          <div className="container footer-list">
-            <div style={{}}>
-              <h5>Connect us</h5>
-              <a href="mailto:memofacapp@gmail.com">
-                <p>Email</p>
-              </a>
-              <a href="https://www.facebook.com/Memofac-103374358665455">
-                <p>Facebook</p>
-              </a>
-              <a href="https://www.instagram.com/memofac_app/">
-                <p>Instagram</p>
-              </a>
-            </div>
-            <div style={{ paddingLeft: 30 }}>
-              <h5>Download</h5>
-              <a href="https://play.google.com/store/apps/details?id=com.memofac">
-                <p>Android</p>
-              </a>
         
-              <a href="https://play.google.com/store/apps/details?id=com.memofac">
-                <p>Iphone</p>
-              </a>
-              
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );
 };
+
+

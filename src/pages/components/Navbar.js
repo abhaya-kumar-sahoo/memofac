@@ -6,7 +6,7 @@ import MemoLogo from "../../assets/logos/Full name Logo.png";
 export default function NavigationBar() {
   const size = useWindowSize();
   return (
-    <div>
+    <div  >
       {" "}
       {size.width > 480 ? (
         <Navbar
@@ -15,13 +15,14 @@ export default function NavigationBar() {
           expand="lg"
           variant="dark"
           bg="transparent"
+
         >
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/" style={{marginTop:-10}} >
             <img
               id="memo-logo"
               src={MemoLogo}
               alt="Memofac Logo"
-              height={size.width > 480 ? "75" : "40"}
+              height={size.width > 480 ? "54" : "40"}
               className="logo"
             />
           </Navbar.Brand>
@@ -32,17 +33,17 @@ export default function NavigationBar() {
           />
 
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ml-auto">
-              <Nav.Link className="h3 px-4 " href="/">
+            <Nav className="ml-auto" style={{marginTop:-10}} >
+              <Nav.Link className="h4 px-4 " href="/">
                 Home
               </Nav.Link>
-              <Nav.Link className="h3 px-4" href="/privacy">
+              <Nav.Link className="h4 px-4" href="/privacy">
                 Privacy Policy
               </Nav.Link>
-              <Nav.Link className="h3 px-4" href="/about">
+              <Nav.Link className="h4 px-4" href="/about">
                 About Us
               </Nav.Link>
-              <Nav.Link className="h3 px-4" href="/download">
+              <Nav.Link className="h4 px-4" href="/download">
                 Download
               </Nav.Link>
             </Nav>

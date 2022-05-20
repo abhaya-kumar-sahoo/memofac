@@ -4,23 +4,21 @@ import { StaticHome, useWindowSize } from "../components";
 import "./Privacy.css";
 export default function Privacy() {
   const size = useWindowSize();
+
   return (
     <StaticHome
       component={
         <div
           className="main-privacy"
-          style={{ paddingTop: size.width > 480 ? 30 : 0 }}
+         
         >
-          <h1
-            style={{ fontSize: size.width > 480 ? 50 : 35 }}
-            className="main-text"
-          >
-            Privacy Polices
-          </h1>
           <Col
             className="privacy"
-            style={{ fontSize: size.width > 480 ? 26 : 18 }}
+            style={{height:size.height*0.8}}
           >
+            <h1 style={{}} className="main-text">
+              Privacy Polices
+            </h1>
             <p>Memofac is a free app intended for use as is.</p>
             <p>
               This page is used to inform visitors regarding Memofac's policies
@@ -114,7 +112,7 @@ export default function Privacy() {
               children to ensure that no personal information is collected from
               a child without their consent.
             </p>
-            <h5>Changes to This Privacy Policy</h5>
+            <h2>Changes to This Privacy Policy</h2>
             <p>
               We may update our Privacy Policy from time to time. Thus, you are
               advised to review this page periodically for any changes. We will

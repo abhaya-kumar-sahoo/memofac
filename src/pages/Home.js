@@ -137,7 +137,7 @@ export default function Home() {
               <div
                 className="vertical-list"
                 style={{
-                  height: size.height*0.8,
+                  height: size.height*0.78,
                   overflow: "scroll",
                   overflowX: "hidden",
                   display:"flex",

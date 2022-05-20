@@ -124,7 +124,7 @@
   position: absolute;
   bottom: 0px;
 
-  align-items: flex-end;
+  /* align-items: flex-end; */
   width: 100%;
 
 }
@@ -136,7 +136,7 @@
   padding-left: 25px;
   height: 130px;
   max-height: fit-content;
-  align-items: flex-end;
+  /* align-items: flex-end; */
 }
 .footer-list >div>h5{
   font-size: large;
@@ -163,7 +163,7 @@
   flex-direction: row;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   padding-right: 60px;
 }
 .footer-logo > h2 {

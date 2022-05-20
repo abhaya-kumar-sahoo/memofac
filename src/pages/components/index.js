@@ -34,7 +34,6 @@ export function useWindowSize() {
 }
 
 export const StaticHome = ({ component }) => {
-  const size = useWindowSize();
 
   return (
     <div>

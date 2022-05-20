@@ -13,7 +13,7 @@ import {
   MDBModal,
   MDBModalBody,
 } from "mdbreact";
-import { MobileViewImages } from "./components/MobileImages";
+// import { MobileViewImages } from "./components/MobileImages";
 // Hook
 export function useWindowSize() {
   // Initialize state with undefined width/height so server and client renders match

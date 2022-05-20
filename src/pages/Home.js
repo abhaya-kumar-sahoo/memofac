@@ -8,11 +8,7 @@ import { images, images_2 } from "./components/Images";
 import PlayStoreLogo from "../assets/logos/Playstore icon.png";
 
 // Usage
-import {
-  MDBContainer,
-  MDBModal,
-  MDBModalBody,
-} from "mdbreact";
+import { MDBContainer, MDBModal, MDBModalBody } from "mdbreact";
 // import { MobileViewImages } from "./components/MobileImages";
 // Hook
 export function useWindowSize() {
@@ -61,10 +57,10 @@ function Modals({ show, onClose = () => {} }) {
                 alt="playstore"
                 src={PlayStoreLogo}
                 className="mx-2"
-                width={size.width > 480 ? 310 : 140}
+                width={size.width > 480 ? 310 : 100}
               />
             </a>
-            <h2 className="header-description" style={{ fontSize: 72 }}>
+            <h2 className="header-description HEADER-BOTTOM" >
               to check reviews{" "}
             </h2>
           </MDBModalBody>
@@ -137,25 +133,28 @@ export default function Home() {
               <div
                 className="vertical-list"
                 style={{
-                  height: size.height*0.78,
+                  height: size.height * 0.78,
                   overflow: "scroll",
                   overflowX: "hidden",
-                  display:"flex",
-                  justifyContent:"space-around",
-                  paddingLeft:15,
-                  paddingRight:15
+                  display: "flex",
+                  justifyContent: "space-around",
+                  paddingLeft: 15,
+                  paddingRight: 15,
                 }}
               >
                 <div>
-              
                   {images.map((item, key) => {
                     return (
-                      <div className="MobileImage" key={key}>
+                      <div
+                        className="MobileImage"
+                        key={key}
+                        onClick={() => setShow(!show)}
+                      >
                         {item.url === "" ? null : (
                           <img
                             width={150}
                             height={150}
-                            style={{ paddingBottom: 5,borderRadius:10 }}
+                            style={{ paddingBottom: 5, borderRadius: 10 }}
                             src={item.url}
                             alt="icon"
                           />
@@ -165,16 +164,18 @@ export default function Home() {
                   })}
                 </div>
                 <div>
-               
-
                   {images_2.map((item, key) => {
                     return (
-                      <div className="MobileImage" key={key}>
+                      <div
+                        className="MobileImage"
+                        key={key}
+                        onClick={() => setShow(!show)}
+                      >
                         {item.url === "" ? null : (
                           <img
                             width={150}
                             height={150}
-                            style={{ paddingBottom: 5,borderRadius:10 }}
+                            style={{ paddingBottom: 5, borderRadius: 10 }}
                             src={item.url}
                             alt="icon"
                           />

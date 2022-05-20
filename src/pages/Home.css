@@ -64,12 +64,48 @@
 html::-webkit-scrollbar {
   display: none;
 }
+
+
+.header-description {
+  color: white;
+  font-size: 90px;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  margin-top: 5vw;
+  font-family: "NuevaStd-Bold";
+}
+
 .modal-headers{
   border-width: 0ch;
   position: absolute;
   color: rgb(126, 130, 134);
   right: 0%;
 }
+
+
+
+@media (max-width :600px){
+
+  .modal-body {
+   width: 95vw;
+  }  
+  .modal-headers{
+    font-size: 16px;
+    position: absolute;
+    top: -30vw;
+    right: 5vw;
+  }
+  .header-description{
+    font-size: 24px;
+  }
+  .HEADER-BOTTOM{
+    font-size: 20px;
+  }
+}
+
+
+
+
 .MobileImage{
   width: 150px ;
   height: 150px  ;

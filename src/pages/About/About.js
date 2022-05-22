@@ -1,18 +1,16 @@
 import React from "react";
 import { Col } from "react-bootstrap";
-import { StaticHome } from "../components";
+
 import "../Privacy Policy/Privacy.css";
 export default function About() {
 
   return (
-    <StaticHome
-      component={
+
         <div
           className="main-privacy"
           style={{ paddingTop: 20,  }}
         >
           <Col className="privacy">
-            <h1 className="main-text">Review App</h1>
             <p>
               We are a social opinion app where you get to see reviews from
               friends as well along with general public for categories like
@@ -20,6 +18,7 @@ export default function About() {
               Schools/Colleges, Investment Firms, Event organiser, NGOs, Youtube
               channels, Spa centres, etc
             </p>
+            <h1 className="main-text">VISION</h1>
 
             <p>
               Our objective is to help people decide better by providing them
@@ -42,7 +41,6 @@ export default function About() {
             </p>
           </Col>
         </div>
-      }
-    />
+
   );
 }

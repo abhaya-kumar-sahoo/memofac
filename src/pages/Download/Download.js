@@ -1,12 +1,11 @@
 import React from "react";
-import { StaticHome, useWindowSize } from "../components";
+import {useWindowSize } from "../components/SocialMedia";
 import PlayStoreLogo from "../../assets/logos/Playstore icon.png";
 
 export default function Download() {
   const size = useWindowSize();
   return (
-    <StaticHome
-      component={
+ 
         <div className="download-page">
           <h1
             style={{ fontSize: size.width > 480 ? 80 : 27 }}
@@ -26,7 +25,6 @@ export default function Download() {
             width={size.width > 480 ? 310 : 120}
           /></a> 
         </div>
-      }
-    />
+
   );
 };

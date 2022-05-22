@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { SocialMedia } from "./pages/components/SocialMedia";
 import Loader from "./pages/components/Loader";
 const Home = lazy(() => import("./pages/Home"));
 
@@ -11,9 +12,10 @@ const NavigationBar= lazy(()=> import  ("./pages/components/Navbar"))
 
 function App() {
 
+  
   return (
     <div
-      
+     
 
     >
       <Router>
@@ -25,6 +27,8 @@ function App() {
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/download" element={<Download />} />
             <Route path="/about" element={<About />} />
+            <Route path="/socialMedia" element={<SocialMedia />} />
+
           </Routes>
         </Suspense>
       </Router>

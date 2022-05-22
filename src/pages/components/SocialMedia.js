@@ -33,35 +33,38 @@ export function useWindowSize() {
   return windowSize;
 }
 
-export const StaticHome = ({ component }) => {
-
+export const SocialMedia = () => {
+  const size = useWindowSize();
   return (
     <div>
-      {component}
+      <div className="footer">
+        <div className="footer-logo">
+          <h1 style={{ paddingTop: 25 }}>Follow us on</h1>
 
-      <div className="footer">    
-            <div className="footer-logo">
-              <h2 style={{ paddingTop: 5 }}>Connect with us</h2>
-
-              <h2 style={{ paddingTop: 5 }} className="mx-3">
-                :
-              </h2>
-
-              <a
-                className="mx-1"
-                href="https://www.facebook.com/Memofac-103374358665455"
-              >
-                <img alt="" width={10} height={35} src={FbLogo} />
-              </a>
-              <a className="mx-3" href="https://www.instagram.com/memofac_app/">
-                <img alt="" width={20} height={20} src={InstaLogo} />
-              </a>
-          
-          </div>
-        
+          <h1 style={{ paddingTop: 25 }} className="mx-3">
+            :
+          </h1>
+          <a className= { size.width > 480 ?"mx-5":"mx-2"} href="https://www.instagram.com/memofac_app/">
+            <img
+              alt=""
+              width={size.width > 480 ? 80 :25}
+              height={size.width > 460 ? 80 : 25}
+              src={InstaLogo}
+            />
+          </a>
+          <a
+            className="mx-2"
+            href="https://www.facebook.com/Memofac-103374358665455"
+          >
+            <img
+              alt=""
+              width={size.width > 480 ? 30 : 12}
+              height={size.width > 480 ? 135 : 45}
+              src={FbLogo}
+            />
+          </a>
+        </div>
       </div>
     </div>
   );
 };
-
-

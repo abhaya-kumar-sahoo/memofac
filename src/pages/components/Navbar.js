@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
-import { useWindowSize } from "./index";
+import { useWindowSize } from "./SocialMedia";
 import MemoLogo from "../../assets/logos/Full name Logo.png";
 
 export default function NavigationBar() {
   const size = useWindowSize();
   return (
     <div  >
-      {" "}
+      
       {size.width > 480 ? (
         <Navbar
           className="pt-4 navbar pr-5"
@@ -17,12 +17,12 @@ export default function NavigationBar() {
           bg="transparent"
 
         >
-          <Navbar.Brand href="/" style={{marginTop:-10}} >
+          <Navbar.Brand href="/" style={{}} >
             <img
               id="memo-logo"
               src={MemoLogo}
               alt="Memofac Logo"
-              height={size.width > 480 ? "54" : "40"}
+              height={size.width > 480 ? "60" : "40"}
               className="logo"
             />
           </Navbar.Brand>
@@ -33,18 +33,21 @@ export default function NavigationBar() {
           />
 
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ml-auto" style={{marginTop:-10}} >
-              <Nav.Link className="h4 px-4 " href="/">
+            <Nav className="ml-auto" style={{}} >
+              <Nav.Link className="h5 px-4 " href="/">
                 Home
               </Nav.Link>
-              <Nav.Link className="h4 px-4" href="/privacy">
+              <Nav.Link className="h5 px-4" href="/privacy">
                 Privacy Policy
               </Nav.Link>
-              <Nav.Link className="h4 px-4" href="/about">
+              <Nav.Link className="h5 px-4" href="/about">
                 About Us
               </Nav.Link>
-              <Nav.Link className="h4 px-4" href="/download">
+              <Nav.Link className="h5 px-4" href="/download">
                 Download
+              </Nav.Link>
+              <Nav.Link className="h5 px-4" href="/socialMedia">
+              Social Media
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -94,18 +97,21 @@ export default function NavigationBar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link active className="h4 px-1 nav-item " href="/">
+                  <Nav.Link active className="h5 px-1 nav-item " href="/">
                     Home
                   </Nav.Link>
-                  <Nav.Link className="h4 px-1 nav-item" href="/privacy">
+                  <Nav.Link className="h5 px-1 nav-item" href="/privacy">
                     Privacy Policy
                   </Nav.Link>
-                  <Nav.Link className="h4 px-1 nav-item" href="/about">
+                  <Nav.Link className="h5 px-1 nav-item" href="/about">
                     About Us
                   </Nav.Link>
-                  <Nav.Link className="h4 px-1 nav-item" href="/download">
+                  <Nav.Link className="h5 px-1 nav-item" href="/download">
                     Download
                   </Nav.Link>
+                  <Nav.Link className="h5 px-1" href="/socialMedia">
+                    Social Media
+              </Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

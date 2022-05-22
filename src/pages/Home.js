@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
-import Marquee from "react-fast-marquee";
 
-import { StaticHome } from "./components/index";
-import { images, images_2 } from "./components/Images";
+
+
 
 import PlayStoreLogo from "../assets/logos/Playstore icon.png";
 
 // Usage
 import { MDBContainer, MDBModal, MDBModalBody } from "mdbreact";
-// import { MobileViewImages } from "./components/MobileImages";
-// Hook
+
+import { lowSizeImage } from "./components/ShortImage";
+
+import ResponsiveGallery from "react-responsive-gallery";
+
 export function useWindowSize() {
   // Initialize state with undefined width/height so server and client renders match
   // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
@@ -60,7 +62,7 @@ function Modals({ show, onClose = () => {} }) {
                 width={size.width > 480 ? 310 : 100}
               />
             </a>
-            <h2 className="header-description HEADER-BOTTOM" >
+            <h2 className="header-description HEADER-BOTTOM">
               to check reviews{" "}
             </h2>
           </MDBModalBody>
@@ -71,124 +73,17 @@ function Modals({ show, onClose = () => {} }) {
 }
 
 export default function Home() {
-  const size = useWindowSize();
   const [show, setShow] = useState(false);
   return (
-    <StaticHome
-      component={
-        <div className="list">
-          <Modals show={show} onClose={() => setShow(!show)} />
-          <div style={{ width: size.width }}>
-            {size.width > 480 ? (
-              <>
-                <Marquee gradientColor={""} speed={80} pauseOnHover play={true}>
-                  <div class="scrolling-wrapper">
-                    {images.map((item, key) => {
-                      return (
-                        <div
-                          className="card"
-                          key={key}
-                          onClick={() => setShow(!show)}
-                        >
-                          {item.url === "" ? null : (
-                            <img
-                              width={220}
-                              height={220}
-                              style={{ borderRadius: 10 }}
-                              src={item.url}
-                              alt="icon"
-                            />
-                          )}
-                        </div>
-                      );
-                    })}
-                  </div>
-                </Marquee>
-
-                <Marquee gradientColor={""} speed={80} pauseOnHover play={true}>
-                  <div class="scrolling-wrapper" style={{ marginTop: 20 }}>
-                    {images_2.map((item, key) => {
-                      return (
-                        <div
-                          className="card"
-                          key={key}
-                          onClick={() => setShow(!show)}
-                        >
-                          {item.url === "" ? null : (
-                            <img
-                              width={220}
-                              height={220}
-                              style={{ borderRadius: 10 }}
-                              src={item.url}
-                              alt="icon"
-                            />
-                          )}
-                        </div>
-                      );
-                    })}
-                  </div>
-                </Marquee>
-              </>
-            ) : (
-              <div
-                className="vertical-list"
-                style={{
-                  height: size.height * 0.78,
-                  overflow: "scroll",
-                  overflowX: "hidden",
-                  display: "flex",
-                  justifyContent: "space-around",
-                  paddingLeft: 15,
-                  paddingRight: 15,
-                }}
-              >
-                <div>
-                  {images.map((item, key) => {
-                    return (
-                      <div
-                        className="MobileImage"
-                        key={key}
-                        onClick={() => setShow(!show)}
-                      >
-                        {item.url === "" ? null : (
-                          <img
-                            width={150}
-                            height={150}
-                            style={{ paddingBottom: 5, borderRadius: 10 }}
-                            src={item.url}
-                            alt="icon"
-                          />
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-                <div>
-                  {images_2.map((item, key) => {
-                    return (
-                      <div
-                        className="MobileImage"
-                        key={key}
-                        onClick={() => setShow(!show)}
-                      >
-                        {item.url === "" ? null : (
-                          <img
-                            width={150}
-                            height={150}
-                            style={{ paddingBottom: 5, borderRadius: 10 }}
-                            src={item.url}
-                            alt="icon"
-                          />
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-      }
-    />
+    <div className="home"  onClick={()=> setShow(!show)} >
+      <Modals  show={show} onClose={()=> setShow(!show)} />
+      <ResponsiveGallery
+        numOfImagesPerRow={{ xs: 2, s: 2, m: 3, l: 3, xl: 4, xxl: 6 }}
+        colsPadding={{ xs: 8, s: 8, m: 8, l: 8, xl: 8, xxl: 8 }}
+        images={lowSizeImage}
+        imagesPaddingBottom={{xs: 15,s: 15,m: 15,l: 15,xl: 15,xxl:15}}
+      />
+      
+    </div>
   );
 }

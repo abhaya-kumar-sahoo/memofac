@@ -4,15 +4,19 @@
   color: white;
   font-size: 26px;
   font-family: "Gill Sans";
-  height: 70vh;
+  height: 85vh;
+}
+.privacy::-webkit-scrollbar {
+  display: none;
 }
 .main-text {
  
   margin-top: 5vh;
-
-  margin-bottom: 2.5vh;
+font-family: 'Gill Sans MT';
+  margin-bottom: 45px;
   color: white;
   padding-left: 0%;
+  font-weight: 900;
 }
 .main-privacy {
   padding-left: 3vw;
@@ -48,7 +52,7 @@
     font-size: 18px;
   }
   .main-privacy{
-    padding-top: 0px;
+    padding-top: 20px;
 
   }
   .privacy >h2{
@@ -68,5 +72,9 @@
   }
   .main-privacy{
     height: fit-content;
+  }
+  .privacy{
+    height: 90vh;
+
   }
 }

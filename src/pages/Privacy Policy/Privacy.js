@@ -1,20 +1,17 @@
 import React from "react";
 import { Col } from "react-bootstrap";
-import { StaticHome, useWindowSize } from "../components";
 import "./Privacy.css";
 export default function Privacy() {
-  const size = useWindowSize();
 
   return (
-    <StaticHome
-      component={
+
         <div
           className="main-privacy"
          
         >
           <Col
             className="privacy"
-            style={{height:size.height*0.8}}
+            // style={{height:size.height}}
           >
             <h1 style={{}} className="main-text">
               Privacy Polices
@@ -127,7 +124,7 @@ export default function Privacy() {
             </p>
           </Col>
         </div>
-      }
-    />
+  
+ 
   );
 }

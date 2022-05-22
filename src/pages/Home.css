@@ -1,29 +1,4 @@
-.scrolling-wrapper {
-  overflow-x: scroll;
-  /* overflow-y: hidden; */
-  white-space: nowrap;
-  float: left;
-  width: 100%;
-}
 
-.card {
-  display: inline-block;
-  /* width: 230px;
-  height: 230px; */
-  margin-left: 20px;
-  border-radius: 20px;
-  background-color: black;
-}
-
-.scrolling-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.scrolling-wrapper {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
 .modal-body {
   background-color: transparent;
   justify-content: center;
@@ -81,7 +56,9 @@ html::-webkit-scrollbar {
   color: rgb(126, 130, 134);
   right: 0%;
 }
-
+.home{
+  padding: 30px;
+}
 
 
 @media (max-width :600px){
@@ -101,17 +78,14 @@ html::-webkit-scrollbar {
   .HEADER-BOTTOM{
     font-size: 20px;
   }
+  .home{
+    padding: 10px;
+  }
 }
 
 
 
 
-.MobileImage{
-  width: 150px ;
-  height: 150px  ;
-  margin-top: 15px;
-  border-radius: 10PX;
-}
-.list{
-  margin-top: 20px;
+.AmusementPark{
+  border-radius: 10px;
 }

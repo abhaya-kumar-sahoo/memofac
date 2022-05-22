@@ -1,4 +1,3 @@
-
 import AmusementPark from "../../assets/photos/AmusementPark-min.png";
 import Apps from "../../assets/photos/Apps-min.png";
 import Aquarium from "../../assets/photos/Aquarium-min.png";
@@ -83,345 +82,344 @@ import Watch from "../../assets/photos/Watch-min.png";
 import Wine from "../../assets/photos/Wine-min.png";
 import Zoo from "../../assets/photos/Zoo-min.png";
 
+export const MobileViewImages = [
+  {
+    image: Perfume,
+    name: "Perfume",
+  },
+  {
+    image: Banks,
+    name: "Banks",
+  },
 
-export const MobileViewImages=[
-    {
-      image: Perfume,
-      name: "Perfume",
-    },
-    {
-      image: Banks,
-      name: "Banks",
-    },
-  
-    
-    {
-      image: Car,
-      name: "Car",
-    },
-    {
-      image: PhotoStudio,
-      name: "PhotoStudio",
-    },
-  
-    {
-      image: DrumKit,
-      name: "DrumKit",
-    },
-  
-    {
-      image: Headphones,
-      name: "Headphones",
-    },
-  
-    {
-      image: Mithai,
-      name: "Mithai",
-    },
-    {
-      image: Candy,
-      name: "Candy",
-    },
-  
-    {
-      image: Chips,
-      name: "Chips",
-    },
-    {
-      image: ColdDrinks,
-      name: "ColdDrinks",
-    },
-  
-    {
-      image: Laptop,
-      name: "Laptop",
-    },
-    {
-      image: Hospitals,
-      name: "Hospitals",
-    },
-  
-    {
-      image: Luggage,
-      name: "Luggage",
-    },
-  
-    {
-      image: Pen,
-      name: "Pen",
-    },
-  
-    {
-      image: Notebooks,
-      name: "Notebooks",
-    },
-    {
-      image: Newspaper,
-      name: "Newspaper",
-    },
-  
-    {
-      image: Showpiece,
-      name: "Showpiece",
-    },
-    {
-      image: Speaker,
-      name: "Speaker",
-    },
-  
-    {
-      image: Sunglasses,
-      name: "Sunglasses",
-    },
-    {
-      image: Shampoo,
-      name: "Shampoo",
-    },
-  
-    {
-      image: Soap,
-      name: "Soap",
-    },
-  
-    {
-      image: Aquarium,
-      name: "Aquarium",
-    },
-  
-    {
-      image: Beach,
-      name: "Beach",
-    },
-    {
-      image: Museum,
-      name: "Museum",
-    },
-  
-    {
-      image: Camera,
-      name: "Camera",
-    },
-    {
-      image: Decorators,
-      name: "Decorators",
-    },
-  
-    {
-      image: Park,
-      name: "Park",
-    },
-    {
-      image: Tea,
-      name: "Tea",
-    },
-  
-    {
-      image: Biscuit,
-      name: "Biscuit",
-    },
-  
-    {
-      image: Toothpaste,
-      name: "Toothpaste",
-    },
-  
-    {
-      image: Zoo,
-      name: "Zoo",
-    },
-  
-    {
-      image: Songs,
-      name: "Songs",
-    },
-    {
-      image: Toohbrush,
-      name: "Toohbrush",
-    },
-    {
-      image: Flute,
-      name: "Flute",
-    },
-    {
-      image: Pencil,
-      name: "Pencil",
-    },
-  
-  
-    {
-      image: Tech,
-      name: "Tech",
-    },
-    {
-        image: Movies,
-        name: "Movies",
-      },
-    
-      {
-        image: Books,
-        name: "Books",
-      },
-      {
-        image: Clothes,
-        name: "Clothes",
-      },
-    
-      {
-        image: EventOrganizer,
-        name: "EventOrganizer",
-      },
-      {
-        image: Apps,
-        name: "Apps",
-      },
-    
-      {
-        image: Hotel,
-        name: "Hotel",
-      },
-      {
-        image: InteriorDesigners,
-        name: "InteriorDesigners",
-      },
-    
-      {
-        image: IceCream,
-        name: "IceCream",
-      },
-      {
-        image: Spa,
-        name: "Spa",
-      },
-      {
-        image: InvestmentFirms,
-        name: "InvestmentFirms",
-      },
-    
-      {
-        image: Guitar,
-        name: "Guitar",
-      },
-    
-      {
-        image: NGOs,
-        name: "NGOs",
-      },
-    
-      {
-        image: AmusementPark,
-        name: "AmusementPark",
-      },
-      {
-        image: MusicFest,
-        name: "MusicFest",
-      },
-    
-      {
-        image: Bakeries,
-        name: "Bakeries",
-      },
-      {
-        image: Restaurant,
-        name: "Restaurant",
-      },
-      {
-        image: Cosmetics,
-        name: "Cosmetics",
-      },
-      {
-        image: HandBag,
-        name: "HandBag",
-      },
-      {
-        image: College,
-        name: "College",
-      },
-    
-      {
-        image: CutlerySet,
-        name: "CutlerySet",
-      },
-    
-      {
-        image: Furniture,
-        name: "Furniture",
-      },
-      {
-        image: Jewellaries,
-        name: "Jewellaries",
-      },
-    
-      {
-        image: School,
-        name: "School",
-      },
-      {
-        image: InsuranceCompany,
-        name: "InsuranceCompany",
-      },
-    
-      {
-        image: Piano,
-        name: "Piano",
-      },
-      {
-        image: Scooter,
-        name: "Scooter",
-      },
-    
-      {
-        image: Motorbike,
-        name: "Motorbike",
-      },
-    
-      {
-        image: Bicycle,
-        name: "Bicycle",
-      },
-    
-      {
-        image: Salon,
-        name: "Salon",
-      },
-      {
-        image: Wine,
-        name: "Wine",
-      },
-    
-      {
-        image: Coffee,
-        name: "Coffee",
-      },
-      {
-        image: Beer,
-        name: "Beer",
-      },
-    
-      {
-        image: Paint,
-        name: "Paint",
-      },
-      {
-        image: Footwear,
-        name: "Footwear",
-      },
-    
-      {
-        image: Mobile,
-        name: "Mobile",
-      },
-    
-      {
-        image: Watch,
-        name: "Watch",
-      },
-    
-      {
-        image: Malls,
-        name: "Malls",
-      },
-      {
-        image: Cruise,
-        name: "Cruise",
-      },
-  ]
+  {
+    image: Car,
+    name: "Car",
+  },
+  {
+    image: PhotoStudio,
+    name: "PhotoStudio",
+  },
+
+  {
+    image: DrumKit,
+    name: "DrumKit",
+  },
+
+  {
+    image: Headphones,
+    name: "Headphones",
+  },
+
+  {
+    image: Mithai,
+    name: "Mithai",
+  },
+  {
+    image: Candy,
+    name: "Candy",
+  },
+
+  {
+    image: Chips,
+    name: "Chips",
+  },
+  {
+    image: ColdDrinks,
+    name: "ColdDrinks",
+  },
+
+  {
+    image: Laptop,
+    name: "Laptop",
+  },
+  {
+    image: Hospitals,
+    name: "Hospitals",
+  },
+
+  {
+    image: Luggage,
+    name: "Luggage",
+  },
+
+  {
+    image: Pen,
+    name: "Pen",
+  },
+
+  {
+    image: Notebooks,
+    name: "Notebooks",
+  },
+  {
+    image: Newspaper,
+    name: "Newspaper",
+  },
+
+  {
+    image: Showpiece,
+    name: "Showpiece",
+  },
+  {
+    image: Speaker,
+    name: "Speaker",
+  },
+
+  {
+    image: Sunglasses,
+    name: "Sunglasses",
+  },
+  {
+    image: Shampoo,
+    name: "Shampoo",
+  },
+
+  {
+    image: Soap,
+    name: "Soap",
+  },
+
+  {
+    image: Aquarium,
+    name: "Aquarium",
+  },
+
+  {
+    image: Beach,
+    name: "Beach",
+  },
+  {
+    image: Museum,
+    name: "Museum",
+  },
+
+  {
+    image: Camera,
+    name: "Camera",
+  },
+  {
+    image: Decorators,
+    name: "Decorators",
+  },
+
+  {
+    image: Park,
+    name: "Park",
+  },
+  {
+    image: Tea,
+    name: "Tea",
+  },
+
+  {
+    image: Biscuit,
+    name: "Biscuit",
+  },
+
+  {
+    image: Toothpaste,
+    name: "Toothpaste",
+  },
+
+  {
+    image: Zoo,
+    name: "Zoo",
+  },
+
+  {
+    image: Songs,
+    name: "Songs",
+  },
+  {
+    image: Toohbrush,
+    name: "Toohbrush",
+  },
+  {
+    image: Flute,
+    name: "Flute",
+  },
+  {
+    image: Pencil,
+    name: "Pencil",
+  },
+
+  {
+    image: Tech,
+    name: "Tech",
+  },
+  {
+    image: Movies,
+    name: "Movies",
+  },
+
+  {
+    image: Books,
+    name: "Books",
+  },
+  {
+    image: Clothes,
+    name: "Clothes",
+  },
+
+  {
+    image: EventOrganizer,
+    name: "EventOrganizer",
+  },
+  {
+    image: Apps,
+    name: "Apps",
+  },
+
+  {
+    image: Hotel,
+    name: "Hotel",
+  },
+  {
+    image: InteriorDesigners,
+    name: "InteriorDesigners",
+  },
+
+  {
+    image: IceCream,
+    name: "IceCream",
+  },
+  {
+    image: Spa,
+    name: "Spa",
+  },
+  {
+    image: InvestmentFirms,
+    name: "InvestmentFirms",
+  },
+
+  {
+    image: Guitar,
+    name: "Guitar",
+  },
+
+  {
+    image: NGOs,
+    name: "NGOs",
+  },
+
+  {
+    image: AmusementPark,
+    name: "AmusementPark",
+  },
+  {
+    image: MusicFest,
+    name: "MusicFest",
+  },
+
+  {
+    image: Bakeries,
+    name: "Bakeries",
+  },
+  {
+    image: Restaurant,
+    name: "Restaurant",
+  },
+  {
+    image: Cosmetics,
+    name: "Cosmetics",
+  },
+  {
+    image: HandBag,
+    name: "HandBag",
+  },
+  {
+    image: College,
+    name: "College",
+  },
+
+  {
+    image: CutlerySet,
+    name: "CutlerySet",
+  },
+
+  {
+    image: Furniture,
+    name: "Furniture",
+  },
+  {
+    image: Jewellaries,
+    name: "Jewellaries",
+  },
+
+  {
+    image: School,
+    name: "School",
+  },
+  {
+    image: InsuranceCompany,
+    name: "InsuranceCompany",
+  },
+
+  {
+    image: Piano,
+    name: "Piano",
+  },
+  {
+    image: Scooter,
+    name: "Scooter",
+  },
+
+  {
+    image: Motorbike,
+    name: "Motorbike",
+  },
+
+  {
+    image: Bicycle,
+    name: "Bicycle",
+  },
+
+  {
+    image: Salon,
+    name: "Salon",
+  },
+  {
+    image: Wine,
+    name: "Wine",
+  },
+
+  {
+    image: Coffee,
+    name: "Coffee",
+  },
+  {
+    image: Beer,
+    name: "Beer",
+  },
+
+  {
+    image: Paint,
+    name: "Paint",
+  },
+  {
+    image: Footwear,
+    name: "Footwear",
+  },
+
+  {
+    image: Mobile,
+    name: "Mobile",
+  },
+
+  {
+    image: Watch,
+    name: "Watch",
+  },
+
+  {
+    image: Malls,
+    name: "Malls",
+  },
+  {
+    image: Cruise,
+    name: "Cruise",
+  },
+];
+
+

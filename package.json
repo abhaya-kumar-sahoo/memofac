@@ -35,14 +35,6 @@
       "react-app/jest"
     ]
   },
-  "optimization": {
-    "scripts": true,
-    "styles": {
-       "minify": false,
-       "inlineCritical": false
-    },
-    "fonts": true
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -55,5 +47,4 @@
       "last 1 safari version"
     ]
   }
-  
 }

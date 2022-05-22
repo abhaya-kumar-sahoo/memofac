@@ -4,9 +4,7 @@ import FbLogo from "../../assets/logos/Fb Icon.png";
 
 import "./global.css";
 
-// Usage
 
-// Hook
 export function useWindowSize() {
   // Initialize state with undefined width/height so server and client renders match
   // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/

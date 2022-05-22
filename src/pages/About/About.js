@@ -1,7 +1,7 @@
 import React from "react";
 import { Col } from "react-bootstrap";
 
-import "../Privacy Policy/Privacy.css";
+import "../PrivacyPolicy/Privacy.css";
 export default function About() {
 
   return (

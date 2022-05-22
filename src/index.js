@@ -9,7 +9,6 @@ ReactDOM.render(
   <div
     style={{
       width: window.innerWidth,
-      backgroundSize: "cover",
       backgroundColor:"#000000"
     }}
   >

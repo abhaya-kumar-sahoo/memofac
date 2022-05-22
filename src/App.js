@@ -4,7 +4,7 @@ import { SocialMedia } from "./pages/components/SocialMedia";
 import Loader from "./pages/components/Loader";
 const Home = lazy(() => import("./pages/Home"));
 
-const Privacy = lazy(() => import("./pages/Privacy Policy/Privacy"));
+const Privacy = lazy(() => import("./pages/PrivacyPolicy/Privacy"));
 const About = lazy(() => import("./pages/About/About"));
 const Download = lazy(() => import("./pages/Download/Download"));
 
@@ -27,7 +27,7 @@ function App() {
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/download" element={<Download />} />
             <Route path="/about" element={<About />} />
-            <Route path="/socialMedia" element={<SocialMedia />} />
+            <Route path="/social" element={<SocialMedia />} />
 
           </Routes>
         </Suspense>

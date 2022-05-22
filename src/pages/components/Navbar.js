@@ -46,7 +46,7 @@ export default function NavigationBar() {
               <Nav.Link className="h5 px-4" href="/download">
                 Download
               </Nav.Link>
-              <Nav.Link className="h5 px-4" href="/socialMedia">
+              <Nav.Link className="h5 px-4" href="/social">
               Social Media
               </Nav.Link>
             </Nav>
@@ -109,7 +109,7 @@ export default function NavigationBar() {
                   <Nav.Link className="h5 px-1 nav-item" href="/download">
                     Download
                   </Nav.Link>
-                  <Nav.Link className="h5 px-1" href="/socialMedia">
+                  <Nav.Link className="h5 px-1" href="/social">
                     Social Media
               </Nav.Link>
                 </Nav>

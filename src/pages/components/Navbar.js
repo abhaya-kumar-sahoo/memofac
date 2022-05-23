@@ -53,7 +53,7 @@ export default function NavigationBar() {
           </Navbar.Collapse>
         </Navbar>
       ) : (
-        <Navbar variant="dark" bg="transparent" expand={false}>
+        <Navbar className="mobile-nav" variant="dark" bg="transparent" expand={false}>
           <Container fluid>
             <Navbar.Brand href="#">
               <img

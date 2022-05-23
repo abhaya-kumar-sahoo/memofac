@@ -6,7 +6,7 @@ import MemoLogo from "../../assets/logos/Full name Logo.png";
 export default function NavigationBar() {
   const size = useWindowSize();
   return (
-    <div  >
+    <div>
       
       {size.width > 480 ? (
         <Navbar
@@ -34,19 +34,19 @@ export default function NavigationBar() {
 
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto" style={{}} >
-              <Nav.Link className="h5 px-4 " href="/">
+              <Nav.Link className="h5 px-3 " href="/">
                 Home
               </Nav.Link>
-              <Nav.Link className="h5 px-4" href="/privacy">
+              <Nav.Link className="h5 px-3" href="/privacy">
                 Privacy Policy
               </Nav.Link>
-              <Nav.Link className="h5 px-4" href="/about">
+              <Nav.Link className="h5 px-3" href="/about">
                 About Us
               </Nav.Link>
-              <Nav.Link className="h5 px-4" href="/download">
+              <Nav.Link className="h5 px-3" href="/download">
                 Download
               </Nav.Link>
-              <Nav.Link className="h5 px-4" href="/social">
+              <Nav.Link className="h5 px-3" href="/social">
               Social Media
               </Nav.Link>
             </Nav>

@@ -4,7 +4,10 @@
   color: white;
   font-size: 26px;
   font-family: "Gill Sans";
-  height: 85vh;
+  height: max-content;
+  margin-top: 10vh;
+  padding-bottom: 20vh;
+
 }
 .privacy::-webkit-scrollbar {
   display: none;
@@ -43,7 +46,12 @@ font-family: 'Gill Sans MT';
   font-family: 'Gill Sans MT';
 
 }
+.privacy >div>p{
+  font-size: 25px;
+  color: #C6C4C4;
+  font-family: 'Gill Sans MT';
 
+}
 @media (max-width: 600px) {
   .main-text {
     font-size: 28px;
@@ -62,6 +70,11 @@ font-family: 'Gill Sans MT';
   .privacy{
     height: 76vh;
 
+  }
+  .privacy >div>p{
+    font-size: 18px;
+margin-bottom: 0px;
+  
   }
 }
 

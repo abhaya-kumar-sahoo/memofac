@@ -25,6 +25,7 @@ export default function About() {
               reviews from their very own people whom they can trust. So
               whenever user are taking decisions like ...
             </p>
+            <div>
             <p>
               1) Which college should I opt for between these 4-5 options ??? ;
               or
@@ -35,6 +36,8 @@ export default function About() {
             <p>
               3) Which movie should I watch that goes with my taste ??? ; etc
             </p>
+            </div>
+
             <p>
               all they need to do is check out what their friend's and public
               opinions are to better decide what to select.

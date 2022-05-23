@@ -58,6 +58,8 @@ html::-webkit-scrollbar {
 }
 .home{
   padding: 30px;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
 }
 
 
@@ -80,6 +82,7 @@ html::-webkit-scrollbar {
   }
   .home{
     padding: 10px;
+    padding-top: 12vh;
   }
 }
 

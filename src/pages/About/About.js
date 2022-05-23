@@ -18,7 +18,7 @@ export default function About() {
               Schools/Colleges, Investment Firms, Event organiser, NGOs, Youtube
               channels, Spa centres, etc
             </p>
-            <h1 className="main-text">VISION</h1>
+            <h1 className="main-text main-text-about"  >VISION</h1>
 
             <p>
               Our objective is to help people decide better by providing them

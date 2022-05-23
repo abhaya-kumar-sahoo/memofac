@@ -57,9 +57,10 @@ html::-webkit-scrollbar {
   right: 0%;
 }
 .home{
-  padding: 30px;
-  padding-top: 20vh;
-  padding-bottom: 20vh;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 17vh;
+  margin-bottom: 20vh;
 }
 
 
@@ -81,8 +82,10 @@ html::-webkit-scrollbar {
     font-size: 20px;
   }
   .home{
-    padding: 10px;
-    padding-top: 12vh;
+    /* padding: 10px; */
+    padding-top: 11vh;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -91,4 +94,5 @@ html::-webkit-scrollbar {
 
 .AmusementPark{
   border-radius: 10px;
+  cursor: pointer;
 }

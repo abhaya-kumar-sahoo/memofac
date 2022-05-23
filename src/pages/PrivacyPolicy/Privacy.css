@@ -21,6 +21,10 @@ font-family: 'Gill Sans MT';
   padding-left: 0%;
   font-weight: 900;
 }
+.main-text-about{
+  margin-top: 10vh;
+
+}
 .main-privacy {
   padding-left: 3vw;
   padding-right: 5vw;
@@ -50,6 +54,7 @@ font-family: 'Gill Sans MT';
   font-size: 25px;
   color: #C6C4C4;
   font-family: 'Gill Sans MT';
+  margin-bottom: 0px;
 
 }
 @media (max-width: 600px) {

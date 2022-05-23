@@ -60,7 +60,7 @@ font-family: 'Gill Sans MT';
     font-size: 18px;
   }
   .main-privacy{
-    padding-top: 20px;
+    padding-top: 10px;
 
   }
   .privacy >h2{
@@ -85,7 +85,7 @@ margin-bottom: 0px;
   }
   .main-privacy{
     height: fit-content;
-    padding-top: 5px;
+    padding-top: 1px;
   }
   .privacy{
     height: 90vh;

@@ -8,7 +8,7 @@ export default function About() {
 
         <div
           className="main-privacy"
-          style={{ paddingTop: 20,  }}
+          
         >
           <Col className="privacy">
             <p>

@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { SocialMedia } from "./pages/components/SocialMedia";
 import Loader from "./pages/components/Loader";
+import {Redirect} from './pages/Redirect'
 const Home = lazy(() => import("./pages/Home"));
 
 const Privacy = lazy(() => import("./pages/PrivacyPolicy/Privacy"));
@@ -28,6 +29,7 @@ function App() {
             <Route path="/download" element={<Download />} />
             <Route path="/about" element={<About />} />
             <Route path="/social" element={<SocialMedia />} />
+            <Route path="/DownloadApp" element={<Redirect />} />
 
           </Routes>
         </Suspense>

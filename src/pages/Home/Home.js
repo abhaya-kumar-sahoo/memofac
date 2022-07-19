@@ -4,12 +4,12 @@ import "./Home.css";
 
 
 
-import PlayStoreLogo from "../assets/logos/Playstore icon.png";
+import PlayStoreLogo from "../../assets/logos/Playstore icon.png";
 
 // Usage
 import { MDBContainer, MDBModal, MDBModalBody } from "mdbreact";
 
-import { lowSizeImage } from "./components/ShortImage";
+import { lowSizeImage } from "../components/ShortImage";
 
 import ResponsiveGallery from "react-responsive-gallery";
 

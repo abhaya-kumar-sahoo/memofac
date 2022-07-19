@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
-import { useWindowSize } from "./SocialMedia";
+import { useWindowSize } from "../ContactUs/ContactUs";
 import MemoLogo from "../../assets/logos/Full name Logo.png";
 
 export default function NavigationBar() {
@@ -46,8 +46,8 @@ export default function NavigationBar() {
               <Nav.Link className="h5 px-3" href="/download">
                 Download
               </Nav.Link>
-              <Nav.Link className="h5 px-3" href="/social">
-              Social Media
+              <Nav.Link className="h5 px-3" href="/contact">
+              Contact
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -109,8 +109,8 @@ export default function NavigationBar() {
                   <Nav.Link className="h5 px-1 nav-item" href="/download">
                     Download
                   </Nav.Link>
-                  <Nav.Link className="h5 px-1" href="/social">
-                    Social Media
+                  <Nav.Link className="h5 px-1" href="/contact">
+                    Contact
               </Nav.Link>
                 </Nav>
               </Offcanvas.Body>

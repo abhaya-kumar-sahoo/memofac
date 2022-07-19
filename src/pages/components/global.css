@@ -124,12 +124,13 @@ a:hover {
 }
 .footer-logo{
   text-align: center;
-  flex-direction: row;
-  display: flex;
+  /* flex-direction: row; */
+  /* display: flex; */
   align-items: center;
 
   justify-content: center;
-  margin-bottom: 10vh;
+  padding: 10px;
+  /* margin-bottom: 10vh; */
 
 }
 .footer-logo >h1{

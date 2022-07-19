@@ -1,5 +1,5 @@
 import React from "react";
-import {useWindowSize } from "../components/SocialMedia";
+import {useWindowSize } from "../ContactUs/ContactUs";
 import PlayStoreLogo from "../../assets/logos/Playstore icon.png";
 
 export default function Download() {

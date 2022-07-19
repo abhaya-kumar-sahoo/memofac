@@ -10,7 +10,7 @@
 }
 @font-face {
   font-family: "NuevaStd-Bold";
-  src: url("./../assets/NuevaStd-Bold.otf");
+  src: url("../../assets/NuevaStd-Bold.otf");
 }
 .mdownload-text {
   font-family: "NuevaStd-Bold";

@@ -11,7 +11,7 @@ if (rdd.osName==="iOS") {
   window.location.href = 'https://play.google.com/store/apps/details?id=com.memofac';
 
 }
-},[])
+},[]) 
 
   return <></>
 }

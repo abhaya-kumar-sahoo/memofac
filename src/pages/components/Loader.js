@@ -1,6 +1,6 @@
 import React from "react";
 import Loaders from "react-js-loader";
-import { useWindowSize } from "./SocialMedia";
+import { useWindowSize } from "../ContactUs/ContactUs";
 
 function Loader({ marginLBottom, paddingTop, marginLTop }) {
   const size = useWindowSize();

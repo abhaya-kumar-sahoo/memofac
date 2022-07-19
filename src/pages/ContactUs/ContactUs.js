@@ -49,7 +49,7 @@ export const ContactUs = () => {
               height={size.width > 460 ? 40 : 25}
               src={InstaLogo}
             />
-          </a>
+          </a> 
           <a
             className="mx-4"
             href="https://www.facebook.com/Memofac-103374358665455"
